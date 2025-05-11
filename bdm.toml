@@ -1,0 +1,24 @@
+[simulation]
+calculate_gradients = true 
+diffusion_boundary_condition = "open" 
+diffusion_method = "euler"
+environment = "uniform_grid" 
+time_step = 0.5 
+bound_space = "open" 
+max_bound = 200 
+min_bound = -100 
+
+
+[visualization]
+export = true
+interval = 10
+
+	[[visualize_agent]]
+	name = "Cell"
+	additional_data_members = [ "diameter_" ]
+
+
+
+[development]
+statistics = false
+
